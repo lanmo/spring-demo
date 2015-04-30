@@ -14,7 +14,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import com.yn.controllers.SimpleController;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@WebAppConfiguration(value="src/main/resources")
+//@WebAppConfiguration(value="src/main/resources")
 @ContextConfiguration(locations = {"classpath:*.xml"})
 public class BaseControllerTest {
 	
