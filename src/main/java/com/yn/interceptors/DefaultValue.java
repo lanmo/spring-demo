@@ -18,7 +18,9 @@ public class DefaultValue implements HandlerMethodArgumentResolver {
 			ModelAndViewContainer mavContainer, NativeWebRequest webRequest,
 			WebDataBinderFactory binderFactory) throws Exception {
 		DefaultVal defaultVal = parameter.getParameterAnnotation(DefaultVal.class);
+		System.out.println("wwwss");
 		if(defaultVal != null) {
+			System.out.println("dwwdsdsdsdd");
 			return defaultVal.value();
 		}
 		

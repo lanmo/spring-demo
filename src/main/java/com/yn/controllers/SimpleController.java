@@ -17,7 +17,7 @@ public class SimpleController {
 	
 	@RequestMapping(value="t.htm",method= {RequestMethod.POST, RequestMethod.GET})
 	@ResponseBody
-	public String hello(@Param("param") String param,  @RequestParam(required = false, defaultValue="哈哈哈") String a) throws IOException {
+	public String hello(@Param(value="param1") String param,  @Param("a") @DefaultVal(value="default") String a) throws IOException {
 		return String.format("Hello %s,%s", param,a);
 	}
 }
